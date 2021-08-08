@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/styles/const.scss';
+
+@font-face {
+  font-family: Yanone-Regular;
+  src: url('./assets/fonts/YanoneKaffeesatz-Regular.ttf');
+}
+
+@font-face {
+  font-family: Yanone-Light;
+  src: url('./assets/fonts/YanoneKaffeesatz-Light.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $medium-purple;
+  font-family: Yanone-Regular;
+}

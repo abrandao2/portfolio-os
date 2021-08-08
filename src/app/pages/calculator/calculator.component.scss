@@ -1,0 +1,58 @@
+@import '../../../assets/styles/const.scss';
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.display {
+  background-color: $lavender-bush;
+  height: 10vw;
+  width: 70%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 8vw;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: $irish-blue;
+}
+
+.button {
+  width: 14vw;
+  height: 14vw;
+  border-radius: 1rem;
+  background-color: $congo-pink;
+  color: $lavender-bush;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
+  font-size: 7vw;
+
+  &:active {
+    background-color: $dark-orange;
+  }
+
+  &-secondary {
+    background-color: $light-purple;
+
+    &:active {
+      background-color: $medium-purple;
+      border: 1px $dark-orange solid;
+    }
+  }
+}
+
+.operation-sign {
+  color: $congo-pink;
+  size: 1rem;
+}

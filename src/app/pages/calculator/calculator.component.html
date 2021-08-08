@@ -1,0 +1,146 @@
+<div class="calculator">
+  <div class="display">
+    <ng-container [ngSwitch]="currentOperation">
+      <div class="operation-sign" *ngSwitchCase="'Division'">&divide;</div>
+      <div class="operation-sign" *ngSwitchCase="'Multiplication'">&times;</div>
+      <div class="operation-sign" *ngSwitchCase="'Subtraction'">&minus;</div>
+      <div class="operation-sign" *ngSwitchCase="'Addition'">&plus;</div>
+      <div *ngSwitchDefault> </div>
+    </ng-container>
+    <div>{{currentValue}}</div>
+  </div>
+
+  <div class="row">
+    <!-- Percentage -->
+    <div
+      id="Percentage"
+      class="button button-secondary"
+      (click)="handleOperation($event)"
+    >
+      &percnt;
+    </div>
+
+    <!-- Clear Entry -->
+    <div
+      id="ClearEntry"
+      class="button button-secondary"
+      (click)="handleOperation($event)"
+    >
+      CE
+    </div>
+
+    <!-- Clear All -->
+    <div 
+      id="Clear"
+      class="button button-secondary"
+      (click)="handleOperation($event)"
+    >
+      C
+    </div>
+
+    <!-- Backspace -->
+    <div
+      id="Backspace"
+      class="button button-secondary"
+      (click)="handleOperation($event)"
+    >
+      &#8656;
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Reciprocal -->
+    <div
+      id="Reciprocal"
+      class="button button-secondary"
+      (click)="handleOperation($event)"
+    >
+      1/x
+    </div>
+
+    <!-- Square -->
+    <div
+      id="Square"
+      class="button button-secondary"
+      (click)="handleOperation($event)"
+    >
+      x²
+    </div>
+
+    <!-- Square Root -->
+    <div
+      id="SquareRoot"
+      class="button button-secondary"
+      (click)="handleOperation($event)"
+    >
+      &radic;
+    </div>
+
+    <!-- Division -->
+    <div
+      id="Division"
+      class="button button-secondary"
+      (click)="handleOperation($event)"
+    >
+      &divide;
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="button" (click)="handleInput($event)">7</div>
+    <div class="button" (click)="handleInput($event)">8</div>
+    <div class="button" (click)="handleInput($event)">9</div>
+    <div
+      id="Multiplication"
+      class="button button-secondary"
+      (click)="handleOperation($event)"
+    >
+      &times;
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="button" (click)="handleInput($event)">4</div>
+    <div class="button" (click)="handleInput($event)">5</div>
+    <div class="button" (click)="handleInput($event)">6</div>
+    <div
+      id="Subtraction"
+      class="button button-secondary"
+      (click)="handleOperation($event)"
+    >
+      &minus;
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="button" (click)="handleInput($event)">1</div>
+    <div class="button" (click)="handleInput($event)">2</div>
+    <div class="button" (click)="handleInput($event)">3</div>
+    <div
+      id="Addition"
+      class="button button-secondary"
+      (click)="handleOperation($event)"
+    >
+      &plus;
+    </div>
+  </div>
+
+  <div class="row">
+    <div 
+      id="SignInversion"
+      class="button"
+      (click)="handleOperation($event)"
+    >
+      +/-
+    </div>
+    <div class="button" (click)="handleInput($event)">0</div>
+    <div class="button" (click)="handleInput($event)">,</div>
+    <div 
+      id="Equality"
+      class="button button-secondary"
+      (click)="handleOperation($event)"
+    >
+      &equals;
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+@import '../../../assets/styles/const.scss';
+
+.list-item {
+  padding: 1rem;
+  color: $lavender-bush;
+  background-color: $congo-pink;
+  margin-bottom: 1rem;
+  border-radius: .8rem;
+  font-size: 6vw;
+}
+
+.list-item:active {
+  background-color: $dark-orange;
+}
